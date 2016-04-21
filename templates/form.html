@@ -1,0 +1,55 @@
+<ion-view view-title="User">
+    <ion-content>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">Username</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input type="password">
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="showConfirm()" ui-sref="app.home">Sign In</button>
+        </div>
+        <br>
+        <div class="padding">
+            <h2>Create New User</h2>
+        </div>
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">First Name</span>
+                <input type="text" placeholder="John">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Last Name</span>
+                <input type="text" placeholder="Doe">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Email</span>
+                <input type="text" placeholder="john@doe.com">
+            </label>
+            <div class="item item-input item-select">
+                <div class="input-label">Gender</div>
+                <select>
+                    <option>Male</option>
+                    <option selected="">Female</option>
+                </select>
+            </div>
+            <div class="item item-input item-select">
+                <div class="input-label">Grade</div>
+                <select>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option selected="">8</option>
+                </select>
+            </div>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive">Create Account</button>
+        </div>
+        <br />
+    </ion-content>
+</ion-view>

@@ -1,0 +1,33 @@
+<ion-view title="'Question'">
+    <ion-content has-header="true" has-tabs="false">
+        <div class="list">
+            <div>
+                <!-- THE QUESTION -->
+                <a class="item item-text-wrap item-icon-right divider">
+                    <h3> {{ question.text }} </h3>
+                </a>
+
+                <!--THE RADIO BUTTONS-->
+                <ion-radio ng-repeat="option in question.options"
+                       ng-value="option.id"
+                       ng-model="$parent.currentOption"
+                       ng-change="optionSelected(option)">
+                    <p>{{ option.text }}</p>
+                </ion-radio>
+            </div>
+            <!-- THE BOTTOM MENU BUTTONS -->
+            <div class="item item-divider ">
+                <!--||question.id==numberOfQuestions-1-->
+                <div class="button-bar">
+                    <a class="button button-positive" ng-hide="question.id==0"
+                        ion-chevron-left ui-sref="app.question({questionId: question.id-1 })" >PREVIOUS</a>
+                    <a class="button button-positive" ng-hide="question.id==numberOfQuestions-1" ion-chevron-right
+                        ui-sref="app.question({questionId: question.id+1})">NEXT</a>
+                    <a class="button button-positive" ng-show="question.id>=numberOfQuestions-1" ion-chevron-right
+                        ui-sref="app.results" >COMPLETE</a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+

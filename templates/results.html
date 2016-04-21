@@ -1,0 +1,18 @@
+<ion-view title="'Results'">
+    <ion-content has-header="true" has-tabs="true">
+        <div class="card">
+            <div class="item item-divider">
+                <h3>The results</h3>
+            </div>
+            <div class="item item-text-wrap">
+                <p>Well done! - You scored {{numberOfCorrectAnswers}} out of {{numberOfQuestions}}</p>
+            </div>
+            <!-- THE BUTTONS -->
+            <div class="item item-divider">
+                <a class="button button-positive center" menu-close ng-click="reset()">Solve Again The Quiz</a>
+                <a class="button button-positive center ion-home" menu-close ui-sref="app.home"> Home </a>
+            </div>
+            
+        </div>
+    </ion-content>
+</ion-view>
