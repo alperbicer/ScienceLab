@@ -10,7 +10,8 @@ Not yet completed, so it may contain to many errors. It is planing to be complet
 
 #Requirement For Build
 
-1) Grunt \\n
+1) Grunt 
+
 2) Cordova/PhoneGap
 3) Xcode (for emulate)
 4) Visual Studio (for AppBuilder by choice)
