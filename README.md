@@ -5,7 +5,7 @@ Not yet completed, so it may contain to many errors. It is planing to be complet
 
 #Contain Tech  
 
-#####1) AngularJs
+1) AngularJs
 
 2) IonicFramework
 
