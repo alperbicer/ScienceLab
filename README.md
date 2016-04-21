@@ -6,6 +6,7 @@ Not yet completed, so it may contain to many errors. It is planing to be complet
 #Contain Tech  
 
 1) AngularJs
+
 2) IonicFramework
 
 #Requirement For Build
@@ -13,5 +14,7 @@ Not yet completed, so it may contain to many errors. It is planing to be complet
 1) Grunt 
 
 2) Cordova/PhoneGap
+
 3) Xcode (for emulate)
+
 4) Visual Studio (for AppBuilder by choice)
